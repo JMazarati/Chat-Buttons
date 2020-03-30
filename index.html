@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Test Buttons</title>
+</head>
+
+<html>
+    <body>
+		<!-- live chat button -->
+		<a id="liveagent_button_online_5731l000000Cad8" href="javascript://Chat" style="display: none;" onclick="liveagent.startChat('5731l000000Cad8')">
+			Online Chat
+		</a>
+		<div id="liveagent_button_offline_5731l000000Cad8" style="display: none;">
+			Offline Chat
+		</div>
+
+		<script type="text/javascript">
+			if (!window._laq) { window._laq = []; }
+			window._laq.push(
+				function(){
+					liveagent.showWhenOnline(
+						'5731l000000Cad8', 
+						document.getElementById('liveagent_button_online_5731l000000Cad8')
+					);
+					liveagent.showWhenOffline(
+						'5731l000000Cad8', 
+						document.getElementById('liveagent_button_offline_5731l000000Cad8')
+					);
+				}
+			);
+		</script>
+
+		
+		<!-- live agent deployment -->
+	
+    <script type='text/javascript' src='https://c.la1-c1cs-fra.salesforceliveagent.com/content/g/js/48.0/deployment.js'></script>
+    <script type='text/javascript'>
+       liveagent.init('https://d.la1-c1cs-fra.salesforceliveagent.com/chat', '5721l000000Cabq', '00D1l0000000rEq');
+</script>
+	</body>
+</html>
