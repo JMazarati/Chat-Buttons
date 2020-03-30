@@ -8,7 +8,7 @@
 
 <html>
     <body>
-		<!-- live chat button -->
+		<!-- live chat button FR-->
 		<a id="liveagent_button_online_5731l000000Cad8" href="javascript://Chat" style="display: none;" onclick="liveagent.startChat('5731l000000Cad8')">
 			Start Chat FR
 		</a>
@@ -31,7 +31,30 @@
 				}
 			);
 		</script>
+	    
+                <!-- live chat button NL-->
+		<a id="liveagent_button_online_5731l000000Cad9" href="javascript://Chat" style="display: none;" onclick="liveagent.startChat('5731l000000Cad9')">
+			Start Chat NL
+		</a>
+		<div id="liveagent_button_offline_5731l000000Cad9" style="display: none;">
+			Chat Offline NL
+		</div>
 
+		<script type="text/javascript">
+			if (!window._laq) { window._laq = []; }
+			window._laq.push(
+				function(){
+					liveagent.showWhenOnline(
+						'5731l000000Cad9', 
+						document.getElementById('liveagent_button_online_5731l000000Cad9')
+					);
+					liveagent.showWhenOffline(
+						'5731l000000Cad9', 
+						document.getElementById('liveagent_button_offline_5731l000000Cad9')
+					);
+				}
+			);
+		</script>
 		
 		<!-- live agent deployment -->
 	
